@@ -5,12 +5,12 @@
 
 C=/tmp/backupdir
 S=/system
-V=CyanogenMod-9
+V=9
 
 PROCEED=1;
 
 check_prereq() {
-   if ( ! grep -q "^ro.modversion=.*$V.*" /system/build.prop );
+   if ( ! grep -q "^ro.cm.version=$V.*" /system/build.prop );
    then
       echo "Not backing up files from incompatible version.";
       PROCEED=0;
@@ -48,11 +48,20 @@ vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y
 vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rn30-ri30.5/full_model.bin
 vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rp30-ri30.5/full_model.bin
 vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-r0-ri30.4a/full_model.bin
+framework/com.android.nfc_extras.jar
 framework/com.google.widevine.software.drm.jar
 framework/com.google.android.maps.jar
 framework/com.google.android.media.effects.jar
-lib/libfilterpack_facedetect.so
 lib/libfacelock_jni.so
+lib/libfilterpack_facedetect.so
+lib/libflint_engine_jni_api.so
+lib/libfrsdk.so
+lib/libgcomm_jni.so
+lib/libpicowrapper.so
+lib/libspeexresampler.so
+lib/libspeexwrapper.so
+lib/libvideochat_jni.so
+lib/libvideochat_stabilize.so
 lib/libvoicesearch.so
 etc/permissions/com.google.android.nfc_extras.xml
 etc/permissions/com.google.android.media.effects.xml
@@ -62,7 +71,6 @@ etc/permissions/features.xml
 app/MediaUploader.apk
 app/GoogleFeedback.apk
 app/GoogleTTS.apk
-app/CalendarGoogle.apk app/Calendar.apk
 app/MarketUpdater.apk
 app/GoogleServicesFramework.apk
 app/YouTube.apk
@@ -81,10 +89,12 @@ app/GalleryGoogle.apk app/Gallery.apk
 app/FaceLock.apk
 app/Vending.apk
 app/GoogleContactsSyncAdapter.apk
+app/GoogleCalendarSyncAdapter.apk
 app/Gmail.apk
 app/OneTimeInitializer.apk
 app/NetworkLocation.apk
 app/GooglePartnerSetup.apk
+app/Phonesky.apk
 etc/hosts
 etc/custom_backup_list.txt
 etc/force_backuptool
