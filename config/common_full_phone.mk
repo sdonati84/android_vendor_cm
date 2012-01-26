@@ -1,5 +1,6 @@
 # Inherit common CM stuff
 $(call inherit-product, vendor/cm/config/common.mk)
+$(call inherit-product, vendor/cm/config/cmAudio.mk)
 
 # Bring in all audio files
 include frameworks/base/data/sounds/AllAudio.mk
