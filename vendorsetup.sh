@@ -7,6 +7,7 @@ add_lunch_combo cm_galaxynote-userdebug
 add_lunch_combo cm_galaxytab101-userdebug
 add_lunch_combo cm_crespo-userdebug
 add_lunch_combo cm_crespo4g-userdebug
+add_lunch_combo cm_epicmtd-userdebug
 add_lunch_combo cm_maguro-userdebug
 add_lunch_combo cm_p4tmo-userdebug
 add_lunch_combo cm_p4vzw-userdebug
