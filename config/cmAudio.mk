@@ -21,4 +21,4 @@ PRODUCT_COPY_FILES += \
 # Ringtones
 PRODUCT_COPY_FILES += \
 	$(RINGTONE_PATH)/CyanTone.mp3:system/media/audio/ringtones/CyanTone.mp3 \
-	$(RINGTONE_PATH)/CyanTone2.mp3:system/media/audio/ringtones/CyanTone2.mp3
+	$(RINGTONE_PATH)/CyanTone2.wav:system/media/audio/ringtones/CyanTone2.wav
