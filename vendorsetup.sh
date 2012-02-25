@@ -2,6 +2,7 @@ add_lunch_combo cm_captivatemtd-userdebug
 add_lunch_combo cm_galaxysmtd-userdebug
 add_lunch_combo cm_galaxysbmtd-userdebug
 add_lunch_combo cm_fascinatemtd-userdebug
+add_lunch_combo cm_vibrantmtd-userdebug
 add_lunch_combo cm_galaxys2-userdebug
 add_lunch_combo cm_galaxynote-userdebug
 add_lunch_combo cm_galaxytab101-userdebug
